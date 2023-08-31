@@ -17,12 +17,14 @@ header {
   align-items: center;
 
   h2 {
+    width: 170px;
     margin-right: auto;
     margin-left: 2rem;
     font-size: 1.3rem;
   }
 
   nav {
+    width: 440px;
     margin-right: 2rem;
     display: flex;
     justify-content: space-around;
@@ -54,7 +56,7 @@ section.main-section {
   }
   div.content-boxes {
     max-width: 1200px;
-    height: 45vh;
+    height: 50vh;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -77,6 +79,8 @@ footer {
   justify-content: center;
   align-items: center;
   margin: auto auto;
+  box-sizing: content-box;
+  padding-bottom: 0.5rem;
 
   div.call {
     height: 40px;
@@ -87,6 +91,19 @@ footer {
     align-items: center;
     p {
       margin: auto auto;
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  header {
+    flex-direction: column;
+
+    h2 {
+      margin: 0 0 1rem 0;
+    }
+    nav {
+      margin: 0;
     }
   }
 }
