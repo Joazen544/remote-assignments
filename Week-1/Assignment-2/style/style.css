@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+}
+
+header {
+  padding: 1rem;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+}
+header h2 {
+  margin-right: auto;
+  margin-left: 2rem;
+}
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+header nav a {
+  margin: 0rem 2rem;
+}/*# sourceMappingURL=style.css.map */
