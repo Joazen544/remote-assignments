@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  box-shadow: 0px 5px 4px 0px rgb(193, 193, 193);
+  display: flex;
+  align-items: center;
+}
+header div.logo {
+  width: 216px;
+  height: 32px;
+  margin: 0 1rem;
+  flex-shrink: 0;
+}
+header nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: auto;
+}
+header nav div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav div a {
+  text-decoration: none;
+  color: rgb(106, 106, 108);
+}
+header nav .button1 {
+  width: 113px;
+}
+header nav .button2 {
+  width: 96px;
+}
+header nav .button3 {
+  width: 80px;
+}
+header nav .button4 {
+  width: 73px;
+}
+header nav .button5 {
+  width: 130px;
+}
+header nav .button6 {
+  width: 150px;
+}
+header nav .button7 {
+  width: 65px;
+}
+header div.side-function {
+  width: 470px;
+  height: 48px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-shrink: 0;
+}
+header div.side-function div.search {
+  width: 200px;
+  height: 36px;
+  background-color: rgb(241, 243, 244);
+  display: flex;
+  align-items: center;
+}
+header div.side-function div.search div.search-icon {
+  margin: 0 0.5rem;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/search.png");
+  background-size: cover;
+}
+header div.side-function div.search input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: rgb(241, 243, 244);
+}
+header div.side-function div.search input:focus {
+  outline: none;
+}
+
+main section.translate {
+  position: relative;
+  z-index: -1;
+  height: 63px;
+  background-color: rgb(241, 243, 244);
+  display: flex;
+  align-items: center;
+}
+main section.translate div.text {
+  margin-right: auto;
+  margin-left: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+main section.translate div.text span.translate {
+  margin-left: 1rem;
+  width: 155px;
+  font-size: 0.7rem;
+}
+main section.translate div.text span.cloud {
+  margin-left: 1rem;
+  font-size: 0.8rem;
+}
+main section.translate div.change-language {
+  flex-shrink: 0;
+  margin-right: 2rem;
+}
+main section.banner {
+  height: 40vw;
+  display: flex;
+  padding: 0 3rem;
+  align-items: center;
+}
+main section.banner div.wording {
+  flex: 1 450px;
+}
+main section.banner div.video-box {
+  flex: 1 450px;
+}
+main section.interested-category {
+  height: 30vw;
+  background-color: rgb(241, 243, 244);
+}
+main section.interested-category div.select-wording {
+  display: flex;
+  align-items: center;
+  padding: 2rem 2rem;
+}
+main section.interested-category div.select-wording div.left {
+  margin-right: auto;
+}
+main section.interested-category div.category-bar nav {
+  display: flex;
+  padding: 0 1rem;
+}
+main section.interested-category div.category-bar nav .interest-item {
+  margin: 1rem;
+}
+main section.products {
+  border: 1px solid black;
+  padding: 40px;
+}
+main section.products div.heading {
+  height: 67px;
+  text-align: center;
+  font-size: 2rem;
+}
+main section.products div.products-list {
+  width: 90vw;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+main section.products div.products-list div.product {
+  border: 1px solid rgb(218, 220, 224);
+  border-radius: 10px;
+  margin: 0.5rem;
+  min-height: 270px;
+  height: 1px;
+  min-width: 200px;
+  flex: 1 0 21%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+main section.products div.products-list div.product a {
+  display: block;
+  min-height: 100%;
+  height: auto;
+  flex: 1;
+  padding: 15px 32px 25px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+main section.products div.products-list div.product a :hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(71, 110, 124);
+}
+main section.products div.products-list div.product a div.product-image {
+  height: 64px;
+  display: flex;
+}
+main section.products div.products-list div.product a div.product-image img {
+  width: 64px;
+  max-height: 64px;
+  margin-top: 0;
+  margin: auto;
+}
+main section.products div.products-list div.product div.product-wording {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+main section.products div.products-list div.product div.product-wording span.product-p-1 {
+  margin-bottom: 0.5rem;
+  color: black;
+  font-weight: bold;
+  margin-bottom: auto;
+}
+main section.products div.products-list div.product div.product-wording span.product-p-2 {
+  color: black;
+}
+main section.check-development {
+  height: 112px;
+  border: 1px solid red;
+}
+main section.news {
+  height: 550px;
+  border: 1px solid blue;
+}
+main section.other-function div.android {
+  height: 480px;
+  background-color: rgb(241, 243, 244);
+}
+main section.other-function div.look-for-event {
+  height: 430px;
+  border: 1px solid black;
+}
+main section.other-function div.learning {
+  height: 430px;
+  border: 1px solid brown;
+}
+main section.other-function div.look-for-event {
+  height: 430px;
+  border: 1px solid black;
+}
+main section.other-function div.community {
+  height: 430px;
+  border: 1px solid brown;
+}/*# sourceMappingURL=style.css.map */
