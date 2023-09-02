@@ -150,7 +150,6 @@ main section.products div.heading {
   font-size: 2rem;
 }
 main section.products div.products-list {
-  width: 90vw;
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
@@ -187,29 +186,31 @@ main section.products div.products-list div.product a :hover {
   text-decoration-color: rgb(71, 110, 124);
 }
 main section.products div.products-list div.product a div.product-image {
-  height: 64px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-main section.products div.products-list div.product a div.product-image img {
+main section.products div.products-list div.product a div.product-image div.image-box {
+  width: 64px;
+  height: 64px;
+}
+main section.products div.products-list div.product a div.product-image div.image-box img {
   width: 64px;
   max-height: 64px;
   margin-top: 0;
   margin: auto;
 }
-main section.products div.products-list div.product div.product-wording {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-main section.products div.products-list div.product div.product-wording span.product-p-1 {
+main section.products div.products-list div.product a div.product-image span.product-p-1 {
   margin-bottom: 0.5rem;
   color: black;
   font-weight: bold;
-  margin-bottom: auto;
 }
-main section.products div.products-list div.product div.product-wording span.product-p-2 {
+main section.products div.products-list div.product a div.product-wording {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+main section.products div.products-list div.product a div.product-wording span.product-p-2 {
   color: black;
 }
 main section.check-development {
