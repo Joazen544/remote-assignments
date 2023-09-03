@@ -52,17 +52,25 @@
           <input type="text" placeholder="Search.." />
         </div>
         <div class="language">
-          <button type="button"></button>
-        </div>
-        <div class="developer-profile">
-          <button type="button">
-            <img src="圖片網址" />
+          <button class="side-function-button" type="button">
+            <img src="./img/globe.png" alt="Language" class="globe" />
+            <span>中文 - 繁體</span>
+            <img
+              src="./img/down-filled-triangular-arrow.png"
+              alt="arrow down"
+              class="arrow"
+            />
           </button>
         </div>
-        <div class="user-profile">
-          <a href="">
-            <img src="圖片網址" alt="" />
-          </a>
+        <div class="div-profile">
+          <button type="button" class="developer-profile-button">
+            <img src="img/dots.png" class="dots" />
+          </button>
+        </div>
+        <div class="div-profile">
+          <button type="button">
+            <img src="img/joazen.png" alt="user" class="user" />
+          </button>
         </div>
       </div>
     </header>
@@ -74,77 +82,273 @@
           <span class="cloud">本頁面由 Cloud Translation API 翻譯而成。</span>
         </div>
         <div class="change-language">
-          <button type="button"><p>Switch to English</p></button>
+          <button type="button">Switch to English</button>
         </div>
       </section>
       <section class="banner">
-        <div class="wording">
-          <h1>聰明智慧</h1>
-          <h1>加速運送</h1>
-          <p>使用開放式的整合式解決方案發揮創意並簡化工作流程。</p>
-        </div>
-        <div class="video-box">
-          <div class="video">
-            <video width="100%" height="100%" autoplay muted>
-              <source src="video/build-smarter-video.mp4" type="video/mp4" />
-            </video>
+        <div class="banner-container">
+          <div class="wording">
+            <h1>聰明智慧</h1>
+            <h1>加速運送</h1>
+            <p>使用開放式的整合式解決方案發揮創意並簡化工作流程。</p>
           </div>
-          <div class="my-app">
-            <h2>我建立的應用程式</h2>
-            <div class="app-list">
-              <a
-                href="https://developers.google.com/focus/mobile-app-development"
-                class="mobile"
-                >行動裝置</a
-              >
-              <a
-                href="https://developers.google.com/focus/web-development"
-                class="net"
-                >網路</a
-              >
-              <a
-                href="https://developers.google.com/focus/ai-development"
-                class="ai"
-                >AI</a
-              >
-              <a
-                href="https://developers.google.com/focus/cloud-development"
-                class="cloud"
-                >Cloud</a
-              >
+          <div class="video-box">
+            <div class="video">
+              <video width="100%" height="100%" autoplay muted loop>
+                <source src="video/build-smarter-video.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="my-app">
+              <h2>我建立的應用程式:</h2>
+              <div class="app-list">
+                <a
+                  href="https://developers.google.com/focus/mobile-app-development"
+                  class="mobile"
+                  >行動裝置</a
+                >
+                <a
+                  href="https://developers.google.com/focus/web-development"
+                  class="net"
+                  >網路</a
+                >
+                <a
+                  href="https://developers.google.com/focus/ai-development"
+                  class="ai"
+                  >AI</a
+                >
+                <a
+                  href="https://developers.google.com/focus/cloud-development"
+                  class="cloud"
+                  >Cloud</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section class="interested-category">
-        <div class="select-wording">
-          <div class="left">
-            <h5>選取要篩選的興趣類別</h5>
-          </div>
-          <div>
-            <a
-              href="https://developers.google.com/profile/u/me/new?hl=zh-tw&continue=https%3A%2F%2Fdevelopers.google.com%2F%3Fhl%3Dzh-tw"
-              class="build-setting"
-              >建立設定檔</a
-            >
-          </div>
-        </div>
-        <div class="category-bar">
-          <nav>
-            <div class="mobile interest-item">
-              <input id="interested-mobile" type="checkbox" />
-              <label for="interested-mobile">行動</label>
+        <div class="interested-container">
+          <div class="select-wording">
+            <div class="left">
+              <h5>選取要篩選的興趣類別</h5>
+              <div class="select-interest-category-icon"></div>
             </div>
-            <div class="map interest-item">
-              <input id="interested-map" type="checkbox" />
-              <label for="interested-map">位置/地圖</label>
+            <div>
+              <a
+                href="https://developers.google.com/profile/u/me/new?hl=zh-tw&continue=https%3A%2F%2Fdevelopers.google.com%2F%3Fhl%3Dzh-tw"
+                class="build-setting"
+              >
+                <div class="user-icon"></div>
+                <p>建立設定檔</p>
+              </a>
             </div>
-          </nav>
-        </div>
-        <div class="news-content">
-          <div class="news-box news-1"></div>
-          <div class="news-box news-2"></div>
+          </div>
+          <div class="category-bar">
+            <nav>
+              <div class="category-container">
+                <div class="mobile interest-item">
+                  <input id="interested-mobile" type="checkbox" />
+                  <label for="interested-mobile">行動</label>
+                </div>
+                <div class="map interest-item">
+                  <input id="interested-map" type="checkbox" />
+                  <label for="interested-map">位置/地圖</label>
+                </div>
+                <div class="iot interest-item">
+                  <input id="interested-iot" type="checkbox" />
+                  <label for="interested-iot">物聯網（IoT）</label>
+                </div>
+                <div class="design interest-item">
+                  <input id="interested-design" type="checkbox" />
+                  <label for="interested-design">設計</label>
+                </div>
+                <div class="smart-living interest-item">
+                  <input id="interested-smart-living" type="checkbox" />
+                  <label for="interested-smart-living"
+                    >智慧型住宅生態系統</label
+                  >
+                </div>
+                <div class="open-source interest-item">
+                  <input id="interested-open-source" type="checkbox" />
+                  <label for="interested-open-source">開放原始碼</label>
+                </div>
+                <div class="search interest-item">
+                  <input id="interested-search" type="checkbox" />
+                  <label for="interested-search">搜尋</label>
+                </div>
+                <div class="internet interest-item">
+                  <input id="interested-internet" type="checkbox" />
+                  <label for="interested-internet">網路</label>
+                </div>
+                <div class="ads interest-item">
+                  <input id="interested-ads" type="checkbox" />
+                  <label for="interested-ads">廣告</label>
+                </div>
+                <div class="ai-ml interest-item">
+                  <input id="interested-ai-ml" type="checkbox" />
+                  <label for="interested-ai-ml">AI 與機器學習</label>
+                </div>
+                <div class="android interest-item">
+                  <input id="interested-android" type="checkbox" />
+                  <label for="interested-android">Android</label>
+                </div>
+                <div class="ar-vr interest-item">
+                  <input id="interested-ar-vr" type="checkbox" />
+                  <label for="interested-ar-vr">AR/VR</label>
+                </div>
+                <div class="c-language interest-item">
+                  <input id="interested-c-language" type="checkbox" />
+                  <label for="interested-c-language">C</label>
+                </div>
+                <div class="c-sharp interest-item">
+                  <input id="interested-c-sharp" type="checkbox" />
+                  <label for="interested-c-sharp">C#</label>
+                </div>
+                <div class="chromeos interest-item">
+                  <input id="interested-chromeos" type="checkbox" />
+                  <label for="interested-chromeos">ChromeOS</label>
+                </div>
+                <div class="firebase interest-item">
+                  <input id="interested-firebase" type="checkbox" />
+                  <label for="interested-firebase">Firebase</label>
+                </div>
+                <div class="flutter interest-item">
+                  <input id="interested-flutter" type="checkbox" />
+                  <label for="interested-flutter">Flutter</label>
+                </div>
+                <div class="google-assist interest-item">
+                  <input id="interested-google-assist" type="checkbox" />
+                  <label for="interested-google-assist">Google 助理</label>
+                </div>
+                <div class="google-cloud interest-item">
+                  <input id="interested-google-cloud" type="checkbox" />
+                  <label for="interested-google-cloud">Google Cloud</label>
+                </div>
+                <div class="google-play interest-item">
+                  <input id="interested-google-play" type="checkbox" />
+                  <label for="interested-google-play">Google Play</label>
+                </div>
+                <div class="ios interest-item">
+                  <input id="interested-ios" type="checkbox" />
+                  <label for="interested-ios">iOS</label>
+                </div>
+                <div class="terraform interest-item">
+                  <input id="interested-terraform" type="checkbox" />
+                  <label for="interested-terraform">Terraform</label>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div class="news-content">
+            <div class="news-container">
+              <div class="news-box news-1">
+                <div class="news-type">
+                  <img src="img/news.png" alt="" />
+                  <p>Article</p>
+                </div>
+                <div class="news-title">
+                  <a href="https://developers.google.com/search?hl=zh-tw"
+                    >Google 搜尋中心 (原名為 Google 網站管理員) |
+                    網站搜尋引擎最佳化 (SEO) 資源</a
+                  >
+                </div>
+                <div class="fast-read">
+                  Google 搜尋中心提供搜尋引擎最佳化 (SEO)
+                  資源，可協助您讓網站顯示在 Google
+                  搜尋中。瞭解如何立即提高網站能見度。
+                </div>
+                <div class="func-type">
+                  <img src="img/google-search-central-logo.svg" alt="" />
+                  <p>Search</p>
+                </div>
+              </div>
+              <div class="news-box news-1">
+                <div class="news-type">
+                  <img src="img/news.png" alt="" />
+                  <p>Article</p>
+                </div>
+                <div class="news-title">
+                  <a href="https://developers.google.com/search?hl=zh-tw"
+                    >Google 搜尋中心 (原名為 Google 網站管理員) |
+                    網站搜尋引擎最佳化 (SEO) 資源</a
+                  >
+                </div>
+                <div class="fast-read">
+                  Google 搜尋中心提供搜尋引擎最佳化 (SEO)
+                  資源，可協助您讓網站顯示在 Google
+                  搜尋中。瞭解如何立即提高網站能見度。
+                </div>
+                <div class="func-type">
+                  <img src="img/google-search-central-logo.svg" alt="" />
+                  <p>Search</p>
+                </div>
+              </div>
+              <div class="news-box news-1">
+                <div class="news-type">
+                  <img src="img/news.png" alt="" />
+                  <p>Article</p>
+                </div>
+                <div class="news-title">
+                  <a href="https://developers.google.com/search?hl=zh-tw"
+                    >Google 搜尋中心 (原名為 Google 網站管理員) |
+                    網站搜尋引擎最佳化 (SEO) 資源</a
+                  >
+                </div>
+                <div class="fast-read">
+                  Google 搜尋中心提供搜尋引擎最佳化 (SEO)
+                  資源，可協助您讓網站顯示在 Google
+                  搜尋中。瞭解如何立即提高網站能見度。
+                </div>
+                <div class="func-type">
+                  <img src="img/google-search-central-logo.svg" alt="" />
+                  <p>Search</p>
+                </div>
+              </div>
+              <div class="news-box news-1">
+                <div class="news-type">
+                  <img src="img/news.png" alt="" />
+                  <p>Article</p>
+                </div>
+                <div class="news-title">
+                  <a href="https://developers.google.com/search?hl=zh-tw"
+                    >Google 搜尋中心 (原名為 Google 網站管理員) |
+                    網站搜尋引擎最佳化 (SEO) 資源</a
+                  >
+                </div>
+                <div class="fast-read">
+                  Google 搜尋中心提供搜尋引擎最佳化 (SEO)
+                  資源，可協助您讓網站顯示在 Google
+                  搜尋中。瞭解如何立即提高網站能見度。
+                </div>
+                <div class="func-type">
+                  <img src="img/google-search-central-logo.svg" alt="" />
+                  <p>Search</p>
+                </div>
+              </div>
+              <div class="news-box news-1">
+                <div class="news-type">
+                  <img src="img/news.png" alt="" />
+                  <p>Article</p>
+                </div>
+                <div class="news-title">
+                  <a href="https://developers.google.com/search?hl=zh-tw"
+                    >Google 搜尋中心 (原名為 Google 網站管理員) |
+                    網站搜尋引擎最佳化 (SEO) 資源</a
+                  >
+                </div>
+                <div class="fast-read">
+                  Google 搜尋中心提供搜尋引擎最佳化 (SEO)
+                  資源，可協助您讓網站顯示在 Google
+                  搜尋中。瞭解如何立即提高網站能見度。
+                </div>
+                <div class="func-type">
+                  <img src="img/google-search-central-logo.svg" alt="" />
+                  <p>Search</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
