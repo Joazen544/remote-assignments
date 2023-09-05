@@ -43,6 +43,14 @@ section.welcome-section {
   justify-content: center;
   align-items: center;
 }
+section.welcome-section h1 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+section.welcome-section h1:hover {
+  cursor: pointer;
+}
 
 section.main-section div.section-title {
   font-size: 1.2rem;
@@ -69,15 +77,24 @@ section.main-section div.content-boxes div.box p {
   margin-top: 15px;
 }
 
-footer {
+section.js_second_section {
+  display: none;
+  margin-top: 30px;
+}
+
+div.call_to_action {
+  height: 30px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto auto;
   box-sizing: content-box;
   padding-bottom: 0.5rem;
 }
-footer div.call {
+div.call_to_action :hover {
+  cursor: pointer;
+}
+div.call_to_action div.call {
   height: 40px;
   width: 150px;
   background-color: rgb(223, 237, 253);
@@ -85,7 +102,7 @@ footer div.call {
   justify-content: center;
   align-items: center;
 }
-footer div.call p {
+div.call_to_action div.call p {
   margin: auto auto;
 }
 
@@ -99,4 +116,4 @@ footer div.call p {
   header nav {
     margin: 0;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

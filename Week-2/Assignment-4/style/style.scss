@@ -44,6 +44,12 @@ section.welcome-section {
   display: flex;
   justify-content: center;
   align-items: center;
+  h1 {
+    &:hover {
+      cursor: pointer;
+    }
+    user-select: none;
+  }
 }
 
 section.main-section {
@@ -74,13 +80,22 @@ section.main-section {
   }
 }
 
-footer {
+section.js_second_section {
+  display: none;
+  margin-top: 30px;
+}
+
+div.call_to_action {
+  height: 30px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto auto;
   box-sizing: content-box;
   padding-bottom: 0.5rem;
+  :hover {
+    cursor: pointer;
+  }
 
   div.call {
     height: 40px;
