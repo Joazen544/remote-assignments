@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1rem;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  align-items: center;
+
+  h2 {
+    width: 170px;
+    margin-right: auto;
+    margin-left: 2rem;
+    font-size: 1.3rem;
+  }
+
+  nav {
+    width: 440px;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: space-around;
+    a {
+      margin: 0rem 2rem;
+      color: black;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+  }
+}
+
+section.welcome-section {
+  height: 25vh;
+  font-size: 1.5rem;
+  background-color: rgb(206 220 236);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    &:hover {
+      cursor: pointer;
+    }
+    user-select: none;
+  }
+}
+
+section.main-section {
+  div.section-title {
+    font-size: 1.2rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.content-boxes {
+    max-width: 1200px;
+    height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    div.box {
+      background-color: rgb(138 152 167);
+      flex: 1 50%;
+      display: flex;
+      justify-content: center;
+      border: 0.5rem solid white;
+
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+section.js_second_section {
+  display: none;
+  margin-top: 30px;
+}
+
+div.call_to_action {
+  height: 30px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: content-box;
+  padding-bottom: 0.5rem;
+  :hover {
+    cursor: pointer;
+  }
+
+  div.call {
+    height: 40px;
+    width: 150px;
+    background-color: rgb(223 237 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      margin: auto auto;
+    }
+  }
+}
+
+@media (max-width: 710px) {
+  header {
+    flex-direction: column;
+
+    h2 {
+      margin: 0 0 1rem 0;
+    }
+    nav {
+      margin: 0;
+    }
+  }
+}
