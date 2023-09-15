@@ -1,13 +1,24 @@
+// function max(numbers) {
+//   // your code here, for-loop method preferred
+
+//   let maxNumber = numbers[0];
+//   for (let i = 1; i < numbers.length; i++) {
+//     if (numbers[i] > maxNumber) maxNumber = numbers[i];
+//   }
+
+//   return maxNumber;
+// }
+
 function max(numbers) {
   // your code here, for-loop method preferred
 
-  let maxNumber = numbers[0];
-  for (let i = 1; i < numbers.length; i++) {
-    if (numbers[i] > maxNumber) maxNumber = numbers[i];
-  }
+  const max = numbers.reduce((maxNumber, num) =>
+    num > maxNumber ? num : maxNumber
+  );
 
-  return maxNumber;
+  return max;
 }
+
 function findPosition(numbers, target) {
   // your code here, for-loop method preferred
 
