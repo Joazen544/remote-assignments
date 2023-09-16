@@ -18,7 +18,6 @@ module.exports = (req, res, next) => {
     if (sumFromOneToNumber > 2 ** 53 - 1) {
       // If the answer is greater than 2^53-1, convert the answer to BigInt
       sumFromOneToNumber = BigInt(sumFromOneToNumber);
-      console.log("BigInt happens");
     }
 
     res.send(`Sum from 1 to ${number} is ${sumFromOneToNumber}`);
