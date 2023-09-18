@@ -1,8 +1,8 @@
 if (document.cookie != "") {
   document.querySelector("main h1").innerHTML = "I know who you are!";
-  document.querySelector(
-    "main div"
-  ).innerHTML = `<p>You are ${document.cookie.slice(5)}</p>`;
+  document.querySelector("main div").innerHTML = `<p>You are ${getCookie(
+    "name"
+  )}</p>`;
 } else {
   document.getElementById("submitButton").addEventListener("click", () => {
     const nameInput = document.querySelector("#name");
@@ -20,3 +20,14 @@ if (document.cookie != "") {
     postNameRequest.send();
   });
 }
+
+function getCookie(cookieName) {
+  let cookie = {};
+  document.cookie.split(";").forEach(function (el) {
+    let [key, value] = el.split("=");
+    cookie[key.trim()] = value;
+  });
+  return cookie[cookieName];
+}
+
+//onload vs onreadystatechange
