@@ -2,7 +2,7 @@ document.getElementById("submitButton").addEventListener("click", () => {
   const numInput = document.querySelector("#numInput");
   const number = numInput.value;
 
-  var getSumRequest = new XMLHttpRequest();
+  const getSumRequest = new XMLHttpRequest();
 
   getSumRequest.onreadystatechange = function () {
     if (getSumRequest.readyState === 4) {
