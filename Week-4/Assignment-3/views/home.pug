@@ -1,0 +1,26 @@
+doctype html
+html 
+    head 
+        title Assignment 
+    body 
+        div 註冊會員
+        form(action="/home/signup" method="post")
+            label(for="signup-email") email 
+            input(type="text" id="signup-email" name="email") 
+            label(for="signup-password") password 
+            input(type="text" id="signup-password" name="password") 
+            input(type="submit" value="註冊")
+        if alreadyExist 
+            div 
+                p Account already exists, please log in
+        div 會員登入
+        form(action="/home/login" method="post")
+            label(for="login-email") email 
+            input(type="text" id="login-email" name="email") 
+            label(for="login-password") password
+            input(type="text" id="login-password" name="password") 
+            input(type="submit" value="登入")
+        if loginFail 
+            div 
+                p Wrong email or password
+
