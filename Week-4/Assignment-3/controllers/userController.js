@@ -17,7 +17,9 @@ exports.signup = async (req, res, next) => {
     // User email already exists
     // Insert doesn't work
     const alreadyExist = true;
-    return res.render("home", { alreadyExist });
+    // console.log(result);
+    // console.log("already exist");
+    return res.send("alreadyExist");
   } else {
     // Signup succeed, welcome
     res.redirect("/member");
@@ -43,7 +45,7 @@ exports.login = async (req, res, next) => {
     res.redirect("/member");
   } else {
     // Login fail
-    const loginFail = true;
-    res.render("home", { loginFail });
+
+    res.send("login fail");
   }
 };
